@@ -3,7 +3,7 @@ from Dado import jogarDado
 from random import randint
 
 def gera_reves():
-    if jogarDado() % 2 == 0:  # Joga o dado.. se for par é sorte, se nao eh reves
+    if jogarDado() % 2 == 0:  # Joga o dado.. se for par eh sorte, se nao eh reves
         opcao = randint(0, (len(Configuracoes.possiveis_sorte) - 1))
         print("SORTE!")
         for key in Configuracoes.possiveis_sorte[opcao].keys():
